@@ -1,0 +1,42 @@
+.content{
+	width: 400px;
+   margin: 0 auto;
+	height: 240px;
+	text-align: center;
+}
+.clear{
+
+clear: both;
+}
+
+form{
+	margin: 5em;
+	backface-visibility:hidden;
+}
+.input{
+	position: relative;
+	float: left;
+	margin: 10px;
+}
+input,textarea{
+	border:1px solid #eee;
+	padding: 1em .5em;
+	outline: none;
+}
+input + label,textarea + label{
+	position: absolute;
+	left: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+	color: #000;
+	transition:all .2s ease;
+}
+input:focus + label,textarea:focus + label{
+color: red;
+font-size: .65em;
+top:8%;
+transform: none;
+}
+.not-empty + label{
+	color:#aaa;
+}

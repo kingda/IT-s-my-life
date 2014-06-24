@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+form{
+	margin: 5em;
+	backface-visibility:hidden;
+}
+.input{
+	position: relative;
+	float: left;
+	margin: 10px;
+}
+input {
+	border:1px solid #eee;
+	padding: 1em .5em;
+	outline: none;
+}
+input + label{
+	position: absolute;
+	left: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+	color: #eee;
+	transition:all .2s ease;
+}
+input:focus + label{
+color: #52A5FB;
+font-size: .65em;
+top:8%;
+transform: none;
+}
+.not-empty + label{
+	color:#aaa;
+}
+
+
+
+	</style>
+	<script type="text/javascript">
+	var inputs=document.getElementsByTagName('input');
+	for(i=0;i<input.length;i++)
+	{
+		var input=inputs[i];
+		input.addEventListener('keyup',bindUI,false);
+	} 
+	function bindUI(){
+		if(this.value){
+			this.classList.add('not-empty');
+
+		}else{
+			this.classList.remove('not-empty');
+		}
+	}
+	</script>
+</head>
+<body>
+<form>
+	<div class="input">
+		<input type="text" id="name" />
+		<label for="name">Your name</label>
+
+	</div>
+	<div class="input">
+		<input type="text" id="adress" />
+		<label for="aderss">Address</label>
+	</div>
+</form>
+</body>
+</html>

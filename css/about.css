@@ -1,0 +1,54 @@
+
+	.content{
+		width: 991px;
+		margin: 0 auto;
+	}
+
+aside
+	{
+		float: left;
+		width: 302px;
+	margin-right:10%;
+	}
+
+	#content {
+		float: left;
+		width: 572px;
+	}
+.content h2{
+	color: blue;
+}
+	
+	
+	
+		
+	.img-box 
+	{ 
+	width:100%; 
+	overflow:hidden; 
+	padding-bottom:15px;
+    }
+ .img-box figure 
+ { 
+		float:left; 
+		margin:0 20px 0 0;
+		padding:0;
+	}
+
+
+   .team-list li {
+	width:100%;
+	overflow:hidden;
+	padding-bottom:43px;
+    }
+    .team-list li:last-child {
+	padding-bottom:0;
+  }
+	.team-list li figure {
+		float:left;
+		margin:0 20px 0 0;
+		padding:0;
+	}
+	.clear{
+		clear: both;
+	}
